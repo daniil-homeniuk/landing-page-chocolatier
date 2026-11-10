@@ -44,6 +44,10 @@
 }
 
 /* General */
+html {
+    scroll-behavior: smooth;
+}
+
 *,
 *::before,
 *::after {
@@ -480,4 +484,140 @@ nav ul a:hover {
 .footer-form .btn {
     align-self: flex-start;
     border-color: var(--color-bg);
+}
+
+/* Responsive: tablet */
+@media (max-width: 900px) {
+    header,
+    footer,
+    section,
+    .product,
+    .clients {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    .welcome-left {
+        padding-left: 5vw;
+    }
+
+    .btn {
+        white-space: nowrap;
+    }
+
+    nav div,
+    nav ul {
+        gap: 1rem;
+    }
+
+    .welcome-left div {
+        flex-wrap: wrap;
+    }
+
+    .services-list {
+        flex-direction: column;
+    }
+}
+
+/* Responsive: mobile */
+@media (max-width: 520px) {
+    header {
+        padding-top: 2rem;        
+    }
+
+    section {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    nav,
+    nav div {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .welcome-left,
+    .welcome-right {
+        width: 100%;
+    }
+
+    .welcome-left {
+        padding: 4rem 5vw;
+    }
+
+    .welcome-left div {
+        flex-wrap: wrap;
+    }
+
+    .welcome-right {
+        height: 300px;
+    }
+
+    .promises > p {
+        max-width: 100%;
+    }
+
+    .promises-content {
+        flex-direction: column;
+    }
+
+    .promises-content img,
+    .promises-text {
+        width: 100%;
+    }
+
+    .promises-content img {
+        height: 300px;
+    }
+
+    .products {
+        padding: 4rem 0 0 0;
+    }
+
+    .product,
+    .product:nth-of-type(even) {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .product img,
+    .product-text {
+        width: 100%;
+    }
+
+    .product img {
+        height: 250px;
+    }
+
+    .slider-arrow {
+        display: none;
+    }
+
+    .clients-list,
+    #clients-slide-2:checked ~ .slider-viewport .clients-list {
+        flex-direction: column;
+        transform: none;
+    }
+
+    .client-card {
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .footer-info,
+    .footer-form {
+        width: 100%;
+    }
 }
