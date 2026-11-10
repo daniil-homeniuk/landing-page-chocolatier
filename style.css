@@ -200,7 +200,7 @@ nav ul a:hover {
 }
 
 .welcome-right {
-    background: url(./assets/images/couverture-pexels-fotios-photos-918327.jpg) center / cover no-repeat;
+    background: url(assets/images/hero.webp) center / cover no-repeat;
 }
 
 /* Promises */
