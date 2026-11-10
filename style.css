@@ -286,3 +286,38 @@ nav ul a:hover {
 .service-card .btn {
     margin-top: auto;
 }
+
+/* Products */
+.products {
+    padding: 4rem 0 0 0;
+}
+
+.products h2 {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding: 4rem 20vw;
+}
+
+.product:nth-of-type(even) {
+    flex-direction: row-reverse;
+    background-color: var(--color-bg-alt);
+}
+
+.product img {
+    width: 50%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.product-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 50%;
+}
