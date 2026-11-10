@@ -118,27 +118,49 @@
                 </div>
             </article>
         </section>
-        <section id="clients">
-            <h2></h2>
-            <div>
-                <img />
-                <div>
-                    <p></p>
-                    <div>
-                        <img />
-                        <p><strong></strong></p>
-                        <p></p>
+        <section id="clients" class="clients">
+            <h2>Clients</h2>
+            <div class="slider">
+                <input type="radio" name="clients-slide" id="clients-slide-1" class="slider-radio" checked>
+                <input type="radio" name="clients-slide" id="clients-slide-2" class="slider-radio">
+                <label for="clients-slide-2" class="slider-arrow slider-prev slider-to-2" aria-label="Avis précédents">&#8249;</label>
+                <label for="clients-slide-1" class="slider-arrow slider-prev slider-to-1" aria-label="Avis précédents">&#8249;</label>
+                <div class="slider-viewport">
+                    <div class="clients-list">
+                        <article class="client-card">
+                            <p class="client-comment">Le coffret de chocolats que j'ai offert était magnifique et délicieux. Les saveurs étaient variées et originales, et la présentation était très soignée. Un grand merci au Palais du Chocolat pour ce cadeau parfait.</p>
+                            <div class="client-author">
+                                <img src="./assets/images/avatar.png" alt="Avatar" />
+                                <div>
+                                    <p><strong>Sophie</strong></p>
+                                    <p>Coffret cadeau personnalisé</p>
+                                </div>
+                            </div>  
+                        </article>
+                        <article class="client-card">
+                            <p class="client-comment">Les chocolats du Palais du Chocolat ont été un véritable succès lors de notre mariage. Tout le monde a adoré les saveurs raffinées et les présentations élégantes. Un grand bravo à toute l'équipe.</p>
+                            <div class="client-author">
+                                <img src="./assets/images/avatar.png" alt="Avatar" />
+                                <div>
+                                    <p><strong>Antoine</strong></p>
+                                    <p>Mariage</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="client-card">
+                            <p class="client-comment">J'ai acheté une tablette de chocolat noir au Palais du Chocolat et je n'ai pas été déçu. Le chocolat était intense et puissant, avec des notes subtiles de fruits secs. Un vrai régal pour les papilles.</p>
+                            <div class="client-author">
+                                <img src="./assets/images/avatar.png" alt="Avatar" />
+                                <div>
+                                    <p><strong>Nicolas</strong></p>
+                                    <p>Achat en boutique</p>
+                                </div>
+                            </div>
+                        </article>
                     </div>
                 </div>
-                <div>
-                    <p></p>
-                    <div>
-                        <img />
-                        <p><strong></strong></p>
-                        <p></p>
-                    </div>
-                </div>
-                <img />
+                <label for="clients-slide-2" class="slider-arrow slider-next slider-to-2" aria-label="Avis suivants">&#8250;</label>
+                <label for="clients-slide-1" class="slider-arrow slider-next slider-to-1" aria-label="Avis suivants">&#8250;</label>
             </div>
         </section>
     </main>
