@@ -95,13 +95,26 @@ h3 {
     font-size: 1.5rem;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
 /* Buttons */
 .btn {
     display: inline-block;
     padding: 0.75rem 1.5rem;
     border: 1px solid var(--color-secondary);
     border-radius: 5px;
+    font-family: inherit;
+    font-size: inherit;
     text-decoration: none;
+    cursor: pointer;
     transition: color 0.2s, background-color 0.2s, border-color 0.2s;
 }
 
@@ -368,12 +381,14 @@ nav ul a:hover {
     object-fit: cover;
 }
 
-.client-author strong {
+.client-author cite {
+    display: block;
+    font-style: normal;
     font-family: var(--font-heading);
     color: var(--color-secondary);
 }
 
-.client-author p + p {
+.client-author cite + p {
     color: var(--color-secondary);
 }
 
@@ -462,9 +477,15 @@ nav ul a:hover {
 .footer-socials {
     display: flex;
     gap: 1rem;
+    list-style: none;
+}
+
+.footer-socials a {
+    display: block;
 }
 
 .footer-socials img {
+    display: block;
     width: 2rem;
     height: 2rem;
     object-fit: contain;
@@ -472,7 +493,8 @@ nav ul a:hover {
     filter: brightness(0) invert(1);
 }
 
-.footer-form input {
+.footer-form input,
+.footer-form textarea {
     padding: 0.75rem 1rem;
     border: 1px solid var(--color-bg-alt);
     background-color: var(--color-bg);
